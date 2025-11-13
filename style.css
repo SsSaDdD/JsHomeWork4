@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ccc;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box {
+    background-color: #222222;
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: none;
+    overflow: auto;
+}
+
+/*1*/
+.box1 {
+    text-align: center;
+}
+#randOutput {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #a259ff;
+    margin-top: 20px;
+}
+.box1 button {
+    font-size: 1rem;
+    padding: 10px 15px;
+    background-color: #555;
+    color: #eee;
+    border: 1px solid #777;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*2*/
+.box2 {
+    display: flex;
+    flex-direction: column;
+}
+#mouseOutput {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    min-height: 1.2em;
+}
+#mouseBox {
+    flex-grow: 1;
+    border: 2px dashed #a259ff;
+    background-color: #333;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+}
+
+/*3*/
+#toggleText {
+    line-height: 1.6;
+}
+#toggleBtn {
+    background-color: #555;
+    color: #eee;
+    border: 1px solid #777;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.hidden {
+    display: none;
+}
+
+/*4*/
+.tabs-container {
+    display: flex;
+}
+.tabs-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 15px;
+}
+.tabs-nav button {
+    display: block;
+    width: 100px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #ccc;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.tabs-nav button.active {
+    background-color: #a259ff;
+    color: white;
+    border-color: #a259ff;
+}
+.tabs-content {
+    border-left: 2px solid #a259ff;
+    padding-left: 15px;
+    flex-grow: 1;
+}
+.tab-panel {
+    display: none;
+}
+.tab-panel.active {
+    display: block;
+}
